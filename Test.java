@@ -27,7 +27,7 @@ public class Test{
 
         try {
         	//Read the file
-            s = new Scanner(new BufferedReader(new FileReader("pitsa001")));
+            s = new Scanner(new BufferedReader(new FileReader("pitsa001mahe")));
 
             while (s.hasNext()) {
                  if (s.hasNextInt()) {
@@ -211,13 +211,16 @@ public class Test{
 		        	break;
 		        }
 
-	    	
+   	
 	        System.out.println(sq_sum);
 	        rt_input = sq_sum/2;
 	        System.out.println(rt_input);
 	        rms[partition] = Math.sqrt(rt_input);
 	        System.out.println(rms[partition]);
 
+	    }
+	    if(stop < size){
+	    	System.out.println("WARNING : The Time value entered exceeds the data points available");
 	    }
 	}
 
@@ -301,7 +304,3 @@ public class Test{
 	}
 
 }
-
-
-
- 
